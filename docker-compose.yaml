@@ -22,6 +22,12 @@ services:
           - yoloappnetwork
     mongo:
       image: mongo
+      restart: always
+      container-name: mongodb
+      volumes: 
+          - ./datadir:/data/db
+      ports:
+          - 27017:27017
       networks:
           - yoloappnetwork
 networks:
