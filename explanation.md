@@ -30,4 +30,12 @@ node:10:alpine - used this due to the small size, suitable for mongodb
 4. Set the network to allow communication with the other containers
 
 
+#### Network
+Network set to use driver:bridge
+Database uses the set network
+Backend depends on set database set network
+Client depends on backend set network
+
+
+
 
