@@ -36,6 +36,19 @@ Database uses the set network
 Backend depends on set database set network
 Client depends on backend set network
 
+#### Volume
+Volume set for database container, this is for data persistence on addition of product
+
+## Setup/Installation Requirements
+Clone repository from github
+
+git clone https://github.com/eayuni/yolo.git
+
+cd yolo
+
+sudo docker-compose build
+
+sudo docker-compose up
 
 
 
