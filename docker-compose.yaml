@@ -1,7 +1,6 @@
-version: '4.6'
+version: '3.3'
 services:
     client:
-      container-name: yoloclient
       build: ./client
       image: yoloclient:version1
       ports:
@@ -11,19 +10,17 @@ services:
       networks:
           - yoloappnetwork
     backend:
-      container-name: yolobackend
       build: ./backend
       image: yolobackend:version1
       ports:
           - "5000:5000"
       depends_on:
-          - mongodb
+          - mongo
       networks:
           - yoloappnetwork
     mongo:
       image: mongo
       restart: always
-      container-name: mongodb
       volumes: 
           - ./datadir:/data/db
       ports:
