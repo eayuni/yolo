@@ -23,3 +23,11 @@ node:10:alpine - used this due to the small size, suitable for mongodb
 6. Expose port 5000
 7. Run the start command
 
+#### Database
+1. Run the mongo image
+2. Set the volume for persistence
+3. Set the port to 27017
+4. Set the network to allow communication with the other containers
+
+
+
